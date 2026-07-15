@@ -51,7 +51,7 @@ function checkQuiz() {
 
 const photos = [
     "IMG_5621.JPG",
-    "_MG_2074.png",
+    "IMG_2074.JPG",
     "IMG_5264.png",
     "IMG_6705.png"
 ];
