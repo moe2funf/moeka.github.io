@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trivia</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Moeka's Website</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="trivia.html">♡ Trivia</a>
+</nav>
+
+<div class="container">
+
+<!-- Left -->
+
+<div class="box">
+
+<h2>Useful Links</h2>
+
+<ul>
+<li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+<li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+<li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+<li><a href="https://github.com" target="_blank">GitHub</a></li>
+</ul>
+
+</div>
+
+<!-- Center -->
+
+<div class="box">
+
+<h2>🏰 Disney Mania Quiz</h2>
+
+<p>Answer the five questions and discover your Disney level!</p>
+
+<form>
+
+<h3>1. When did Tokyo Disneyland open?</h3>
+
+<input type="radio" name="q1" value="1">1983<br>
+<input type="radio" name="q1" value="0">1992<br>
+<input type="radio" name="q1" value="0">2001<br><br>
+
+<h3>2. Which park opened in 2001?</h3>
+
+<input type="radio" name="q2" value="0">Tokyo Disneyland<br>
+<input type="radio" name="q2" value="1">Tokyo DisneySea<br>
+<input type="radio" name="q2" value="0">EPCOT<br><br>
+
+<h3>3. Mickey Mouse's girlfriend is...</h3>
+
+<input type="radio" name="q3" value="1">Minnie Mouse<br>
+<input type="radio" name="q3" value="0">Daisy Duck<br>
+<input type="radio" name="q3" value="0">Clarabelle<br><br>
+
+<h3>4. Which movie features Elsa?</h3>
+
+<input type="radio" name="q4" value="1">Frozen<br>
+<input type="radio" name="q4" value="0">Moana<br>
+<input type="radio" name="q4" value="0">Tangled<br><br>
+
+<h3>5. Which Disney park has Mount Prometheus?</h3>
+
+<input type="radio" name="q5" value="0">Tokyo Disneyland<br>
+<input type="radio" name="q5" value="1">Tokyo DisneySea<br>
+<input type="radio" name="q5" value="0">Disney California Adventure<br><br>
+
+<button type="button" onclick="checkQuiz()">
+Check My Disney Level
+</button>
+
+</form>
+
+<p id="result"></p>
+
+</div>
+
+<!-- Right -->
+
+<div class="box">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text" placeholder="Your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="example@email.com" required>
+
+<label>Message</label>
+<textarea rows="6" placeholder="Write your message..." required></textarea>
+
+<input type="submit" value="Send">
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Moeka Kirimoto</p>
+
+</footer>
+
+</body>
+</html>

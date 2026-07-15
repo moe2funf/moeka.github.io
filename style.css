@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#fffaf8;
+    font-family:Arial,sans-serif;
+    color:#5d4037;
+}
+
+/* ===== Common ===== */
+
+header,
+nav,
+.container,
+footer{
+    width:95%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* ===== Header ===== */
+
+header{
+    background:#e7c7b8;
+    color:white;
+    text-align:center;
+    padding:30px;
+    border-radius:18px 18px 0 0;
+    margin-top:20px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+/* ===== Navigation ===== */
+
+nav{
+    display:flex;
+    background:#f4d8d6;
+}
+
+nav a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    color:#5d4037;
+    padding:18px;
+    font-size:22px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#fdeef2;
+    color:#c26f82;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a:hover::after{
+    content:" ♡";
+}
+
+/* ===== Layout ===== */
+
+.container{
+    display:flex;
+}
+
+/* ===== Box ===== */
+
+.box{
+    flex:1;
+    background:white;
+    border:2px solid #efd8d5;
+    padding:25px;
+    min-height:520px;
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.box h2{
+    color:#c26f82;
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+.box p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* ===== Image ===== */
+
+.profile-img{
+    display:block;
+    width:100%;
+    max-width:280px;
+    margin:20px auto;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* ===== Links ===== */
+
+.box ul{
+    margin-left:20px;
+}
+
+.box li{
+    margin-bottom:12px;
+}
+
+.box a{
+    color:#8d6e63;
+    text-decoration:none;
+}
+
+.box a:hover{
+    color:#c26f82;
+    text-decoration:underline;
+}
+
+/* ===== Table ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#f4d8d6;
+    color:#5d4037;
+}
+
+th,
+td{
+    border:1px solid #efd8d5;
+    padding:12px;
+    text-align:center;
+}
+
+/* ===== Form ===== */
+
+label{
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    margin-top:5px;
+    margin-bottom:18px;
+    padding:10px;
+    border:1px solid #d8c2c0;
+    border-radius:10px;
+}
+
+input[type="submit"],
+button{
+    width:100%;
+    background:#cf7f90;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+input[type="submit"]:hover,
+button:hover{
+    background:#b96678;
+}
+
+/* ===== Trivia ===== */
+
+h3{
+    margin-top:20px;
+    margin-bottom:10px;
+    color:#c26f82;
+    font-size:24px;
+}
+
+input[type="radio"]{
+    width:auto;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+button{
+    margin-top:25px;
+}
+
+#result{
+    margin-top:30px;
+    padding:20px;
+    text-align:center;
+    font-size:26px;
+    color:#c26f82;
+    font-weight:bold;
+    background:#fff5f7;
+    border-radius:12px;
+    border:2px solid #f4d8d6;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    background:#e7c7b8;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:0 0 18px 18px;
+}
+
+footer p{
+    margin:0;
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+nav{
+    flex-direction:column;
+}
+
+header,
+nav,
+.container,
+footer{
+    width:100%;
+}
+
+}
+
+.click-photo{
+    text-align:center;
+    margin-top:12px;
+    color:#c26f82;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.click-photo:hover{
+    color:#b96678;
+    text-decoration:underline;
+}
